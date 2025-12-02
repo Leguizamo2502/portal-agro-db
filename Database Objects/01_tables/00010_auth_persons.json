@@ -1,0 +1,172 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00010-auth-persons",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FirstName",
+                    "type": "NVARCHAR(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "LastName",
+                    "type": "NVARCHAR(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Identification",
+                    "type": "NVARCHAR(50)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CityId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PhoneNumber",
+                    "type": "NVARCHAR(30)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Address",
+                    "type": "NVARCHAR(200)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Persons_Cities_CityId",
+              "baseTableSchemaName": "Auth",
+              "baseTableName": "Persons",
+              "baseColumnNames": "CityId",
+              "referencedTableSchemaName": "Location",
+              "referencedTableName": "Cities",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columnNames": "Identification",
+              "constraintName": "UK_Persons_Identification"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "indexName": "IX_Persons_CityId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CityId"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "indexName": "IX_Persons_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

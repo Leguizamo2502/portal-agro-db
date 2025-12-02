@@ -1,0 +1,116 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "01000_auth_persons_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01001_auth_users_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+
+    {
+      "include": {
+        "file": "01010_location_departments_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01011_location_cities_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+
+    {
+      "include": {
+        "file": "01020_security_roles_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01021_security_permissions_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01022_security_forms_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01023_security_modules_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01024_security_form_modules_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01025_security_rol_users_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01026_security_rol_form_permissions_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+
+    {
+      "include": {
+        "file": "01030_producers_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01031_producers_farms_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01032_producers_farm_images_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+
+    {
+      "include": {
+        "file": "01040_products_categories_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01041_products_products_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01042_products_product_images_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01045_products_product_farms_seed.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

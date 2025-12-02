@@ -1,0 +1,102 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00000-create-auth-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Auth') EXEC('CREATE SCHEMA Auth AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00001-create-security-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Security') EXEC('CREATE SCHEMA Security AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00002-create-location-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Location') EXEC('CREATE SCHEMA Location AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00003-create-producers-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Producers') EXEC('CREATE SCHEMA Producers AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00004-create-products-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Products') EXEC('CREATE SCHEMA Products AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00005-create-orders-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Orders') EXEC('CREATE SCHEMA Orders AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00006-create-notifications-schema",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Notifications') EXEC('CREATE SCHEMA Notifications AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

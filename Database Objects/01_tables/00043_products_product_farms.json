@@ -1,0 +1,154 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00043-products-product-farms",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "ProductId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FarmId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ProductFarms_Products_ProductId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "ProductFarms",
+              "baseColumnNames": "ProductId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Products",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ProductFarms_Farms_FarmId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "ProductFarms",
+              "baseColumnNames": "FarmId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Farms",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "columnNames": "ProductId,FarmId",
+              "constraintName": "UK_ProductFarms_Product_Farm"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "indexName": "IX_ProductFarms_ProductId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "ProductId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "indexName": "IX_ProductFarms_FarmId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "FarmId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "indexName": "IX_ProductFarms_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "CreateAt", "descending": true }
+                },
+                {
+                  "column": { "name": "Id", "descending": true }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

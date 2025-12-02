@@ -1,0 +1,133 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00052-orders-order-chat-conversations",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatConversations",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": { "primaryKey": true, "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "OrderId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "IsChatEnabled",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ChatEnabledAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ChatClosedAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ChatClosedReason",
+                    "type": "NVARCHAR(500)"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_OrderChatConversations_Orders_OrderId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "OrderChatConversations",
+              "baseColumnNames": "OrderId",
+              "referencedTableSchemaName": "Orders",
+              "referencedTableName": "Orders",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatConversations",
+              "columnNames": "OrderId",
+              "constraintName": "UK_OrderChatConversations_Order"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatConversations",
+              "indexName": "IX_OrderChatConversations_OrderId",
+              "unique": true,
+              "columns": [
+                { "column": { "name": "OrderId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatConversations",
+              "indexName": "IX_OrderChatConversations_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreateAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

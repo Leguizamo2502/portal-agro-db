@@ -1,0 +1,145 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00031-producers-producer-social-links",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "ProducerSocialLinks",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProducerId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Network",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Url",
+                    "type": "NVARCHAR(512)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ProducerSocialLinks_Producers_ProducerId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "ProducerSocialLinks",
+              "baseColumnNames": "ProducerId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Producers",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "ProducerSocialLinks",
+              "columnNames": "ProducerId,Network",
+              "constraintName": "UK_ProducerSocialLinks_Producer_Network"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProducerSocialLinks",
+              "indexName": "IX_ProducerSocialLinks_ProducerId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "ProducerId"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProducerSocialLinks",
+              "indexName": "IX_ProducerSocialLinks_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
