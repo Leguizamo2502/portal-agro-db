@@ -1,0 +1,119 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00053-orders-order-chat-messages",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatMessages",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": { "primaryKey": true, "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "ConversationId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "SenderUserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Message",
+                    "type": "NVARCHAR(2000)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsSystem",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_OrderChatMessages_OrderChatConversations_ConversationId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "OrderChatMessages",
+              "baseColumnNames": "ConversationId",
+              "referencedTableSchemaName": "Orders",
+              "referencedTableName": "OrderChatConversations",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatMessages",
+              "indexName": "IX_OrderChatMessages_ConversationId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "ConversationId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "OrderChatMessages",
+              "indexName": "IX_OrderChatMessages_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreateAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

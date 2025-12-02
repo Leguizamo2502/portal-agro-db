@@ -1,0 +1,159 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00030-producers-producers",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Code",
+                    "type": "NVARCHAR(10)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "QrUrl",
+                    "type": "NVARCHAR(300)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Description",
+                    "type": "NVARCHAR(500)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Producers_Users_UserId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "Producers",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columnNames": "Code",
+              "constraintName": "UK_Producers_Code"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columnNames": "UserId",
+              "constraintName": "UK_Producers_UserId"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "indexName": "IX_Producers_UserId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "UserId"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "indexName": "IX_Producers_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

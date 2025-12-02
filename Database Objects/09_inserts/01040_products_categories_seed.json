@@ -1,0 +1,548 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01040-products-categories-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+
+      
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Frutas frescas" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Hortalizas y verduras" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Tubérculos y raíces" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Granos, cereales y leguminosas" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Café y cacao" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Productos pecuarios", "value": "Productos pecuarios" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Procesados artesanales" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Vivero y semillas" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+    
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cítricos" } },
+                { "column": { "name": "ParentCategoryId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Tropicales" } },
+                { "column": { "name": "ParentCategoryId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De clima frío" } },
+                { "column": { "name": "ParentCategoryId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De pepita" } },
+                { "column": { "name": "ParentCategoryId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De hueso" } },
+                { "column": { "name": "ParentCategoryId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+       
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De hoja" } },
+                { "column": { "name": "ParentCategoryId", "value": "2" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De fruto" } },
+                { "column": { "name": "ParentCategoryId", "value": "2" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "De raíz y bulbo" } },
+                { "column": { "name": "ParentCategoryId", "value": "2" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Aromáticas frescas" } },
+                { "column": { "name": "ParentCategoryId", "value": "2" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+        
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Tubérculos andinos" } },
+                { "column": { "name": "ParentCategoryId", "value": "3" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Tubérculos tropicales" } },
+                { "column": { "name": "ParentCategoryId", "value": "3" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Musáceas culinarias" } },
+                { "column": { "name": "ParentCategoryId", "value": "3" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+   
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cereales" } },
+                { "column": { "name": "ParentCategoryId", "value": "4" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Leguminosas secas" } },
+                { "column": { "name": "ParentCategoryId", "value": "4" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Semillas y oleaginosas" } },
+                { "column": { "name": "ParentCategoryId", "value": "4" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+     
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Café en grano" } },
+                { "column": { "name": "ParentCategoryId", "value": "5" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Café procesado" } },
+                { "column": { "name": "ParentCategoryId", "value": "5" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cacao en grano" } },
+                { "column": { "name": "ParentCategoryId", "value": "5" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cacao procesado" } },
+                { "column": { "name": "ParentCategoryId", "value": "5" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Lácteos" } },
+                { "column": { "name": "ParentCategoryId", "value": "6" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Quesos" } },
+                { "column": { "name": "ParentCategoryId", "value": "6" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Huevos" } },
+                { "column": { "name": "ParentCategoryId", "value": "6" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Miel y apicultura" } },
+                { "column": { "name": "ParentCategoryId", "value": "6" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Mermeladas y conservas" } },
+                { "column": { "name": "ParentCategoryId", "value": "7" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Harinas y premezclas" } },
+                { "column": { "name": "ParentCategoryId", "value": "7" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Snacks y deshidratados" } },
+                { "column": { "name": "ParentCategoryId", "value": "7" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Salsas y aderezos" } },
+                { "column": { "name": "ParentCategoryId", "value": "7" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Bebidas artesanales" } },
+                { "column": { "name": "ParentCategoryId", "value": "7" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Plantas aromáticas y medicinales" } },
+                { "column": { "name": "ParentCategoryId", "value": "8" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Árboles frutales" } },
+                { "column": { "name": "ParentCategoryId", "value": "8" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Plantas ornamentales" } },
+                { "column": { "name": "ParentCategoryId", "value": "8" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Categories",
+              "columns": [
+                { "column": { "name": "Name", "value": "Semillas agrícolas" } },
+                { "column": { "name": "ParentCategoryId", "value": "8" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}
