@@ -1,0 +1,137 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00025-security-rol-users",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RolId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RolUsers_Users_UserId",
+              "baseTableSchemaName": "Security",
+              "baseTableName": "RolUsers",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RolUsers_Rols_RolId",
+              "baseTableSchemaName": "Security",
+              "baseTableName": "RolUsers",
+              "baseColumnNames": "RolId",
+              "referencedTableSchemaName": "Security",
+              "referencedTableName": "Rols",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columnNames": "UserId,RolId",
+              "constraintName": "UK_RolUsers_User_Rol"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "indexName": "IX_RolUsers_UserId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "UserId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "indexName": "IX_RolUsers_RolId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "RolId" }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

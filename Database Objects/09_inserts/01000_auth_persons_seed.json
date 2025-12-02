@@ -1,0 +1,98 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01030-producers-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Persona1" } },
+                { "column": { "name": "LastName", "value": "Persona1" } },
+                { "column": { "name": "Identification", "value": "000000000" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "Address", "value": "Calle 1 # 1-1" } },
+                { "column": { "name": "PhoneNumber", "value": "3000000000" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Persona2" } },
+                { "column": { "name": "LastName", "value": "Persona2" } },
+                { "column": { "name": "Identification", "value": "000000001" } },
+                { "column": { "name": "CityId", "value": "34" } },
+                { "column": { "name": "Address", "value": "Carrera 10 # 20-15" } },
+                { "column": { "name": "PhoneNumber", "value": "3000000001" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Persona3" } },
+                { "column": { "name": "LastName", "value": "Persona3" } },
+                { "column": { "name": "Identification", "value": "000000002" } },
+                { "column": { "name": "CityId", "value": "35" } },
+                { "column": { "name": "Address", "value": "Avenida 3 # 5-30" } },
+                { "column": { "name": "PhoneNumber", "value": "3000000003" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Sergio" } },
+                { "column": { "name": "LastName", "value": "Leguizamo" } },
+                { "column": { "name": "Identification", "value": "000000003" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "Address", "value": "Avenida 3 # 5-30" } },
+                { "column": { "name": "PhoneNumber", "value": "3000000004" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Auth",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Ruben" } },
+                { "column": { "name": "LastName", "value": "Leguizamo" } },
+                { "column": { "name": "Identification", "value": "000000004" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "Address", "value": "Avenida 3 # 5-30" } },
+                { "column": { "name": "PhoneNumber", "value": "3000000005" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

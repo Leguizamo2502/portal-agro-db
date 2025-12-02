@@ -1,0 +1,107 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01031-producers-farms-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Farms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Finca el Jardin" } },
+                { "column": { "name": "Hectares", "valueNumeric": "4" } },
+                { "column": { "name": "Altitude", "valueNumeric": "1600" } },
+                { "column": { "name": "Latitude", "valueNumeric": "1200.0" } },
+                { "column": { "name": "Longitude", "valueNumeric": "600.0" } },
+                { "column": { "name": "ProducerId", "value": "3" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Farms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Finca el Mirador" } },
+                { "column": { "name": "Hectares", "valueNumeric": "4" } },
+                { "column": { "name": "Altitude", "valueNumeric": "1600" } },
+                { "column": { "name": "Latitude", "valueNumeric": "1200.0" } },
+                { "column": { "name": "Longitude", "valueNumeric": "600.0" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Farms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Finca los Alpes" } },
+                { "column": { "name": "Hectares", "valueNumeric": "4" } },
+                { "column": { "name": "Altitude", "valueNumeric": "1600" } },
+                { "column": { "name": "Latitude", "valueNumeric": "1200.0" } },
+                { "column": { "name": "Longitude", "valueNumeric": "600.0" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Farms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Finca los Lulos" } },
+                { "column": { "name": "Hectares", "valueNumeric": "4" } },
+                { "column": { "name": "Altitude", "valueNumeric": "1600" } },
+                { "column": { "name": "Latitude", "valueNumeric": "1200.0" } },
+                { "column": { "name": "Longitude", "valueNumeric": "600.0" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Farms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Finca los Primos" } },
+                { "column": { "name": "Hectares", "valueNumeric": "4" } },
+                { "column": { "name": "Altitude", "valueNumeric": "1600" } },
+                { "column": { "name": "Latitude", "valueNumeric": "1200.0" } },
+                { "column": { "name": "Longitude", "valueNumeric": "600.0" } },
+                { "column": { "name": "ProducerId", "value": "2" } },
+                { "column": { "name": "CityId", "value": "33" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
