@@ -266,12 +266,12 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Orders_Cities_CityId",
+              "constraintName": "FK_Orders_City_CityId",
               "baseTableSchemaName": "Orders",
               "baseTableName": "Orders",
               "baseColumnNames": "CityId",
               "referencedTableSchemaName": "Location",
-              "referencedTableName": "Cities",
+              "referencedTableName": "City",
               "referencedColumnNames": "Id",
               "onDelete": "RESTRICT"
             }

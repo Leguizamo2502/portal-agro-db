@@ -110,12 +110,12 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Persons_Cities_CityId",
+              "constraintName": "FK_Persons_City_CityId",
               "baseTableSchemaName": "Auth",
               "baseTableName": "Persons",
               "baseColumnNames": "CityId",
               "referencedTableSchemaName": "Location",
-              "referencedTableName": "Cities",
+              "referencedTableName": "City",
               "referencedColumnNames": "Id",
               "onDelete": "RESTRICT"
             }
