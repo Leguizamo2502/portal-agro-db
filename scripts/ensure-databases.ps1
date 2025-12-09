@@ -22,7 +22,7 @@ if (-not $ports.ContainsKey($Environment)) {
 }
 
 $port = $ports[$Environment]
-$dbName = "portal-agro_$Environment"
+$dbName = "portal_agro_$Environment"
 
 Write-Host "→ Revisando base: $dbName en localhost:$port"
 

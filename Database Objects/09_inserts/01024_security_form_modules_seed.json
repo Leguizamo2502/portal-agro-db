@@ -5,12 +5,12 @@
         "id": "01024-security-form-modules-seed",
         "author": "portal-agro-team",
         "changes": [
-
           {
             "insert": {
               "schemaName": "Security",
               "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
+              "columns": [
+                { "column": { "name": "ModuleId", "value": "1" }},
                 { "column": { "name": "FormId", "value": "1" }},
                 { "column": { "name": "Active", "valueBoolean": true }},
                 { "column": { "name": "IsDeleted", "valueBoolean": false }},
@@ -18,12 +18,12 @@
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Security",
               "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
+              "columns": [
+                { "column": { "name": "ModuleId", "value": "1" }},
                 { "column": { "name": "FormId", "value": "2" }},
                 { "column": { "name": "Active", "valueBoolean": true }},
                 { "column": { "name": "IsDeleted", "valueBoolean": false }},
@@ -31,12 +31,12 @@
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Security",
               "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
+              "columns": [
+                { "column": { "name": "ModuleId", "value": "1" }},
                 { "column": { "name": "FormId", "value": "3" }},
                 { "column": { "name": "Active", "valueBoolean": true }},
                 { "column": { "name": "IsDeleted", "valueBoolean": false }},
@@ -44,12 +44,12 @@
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Security",
               "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
+              "columns": [
+                { "column": { "name": "ModuleId", "value": "1" }},
                 { "column": { "name": "FormId", "value": "4" }},
                 { "column": { "name": "Active", "valueBoolean": true }},
                 { "column": { "name": "IsDeleted", "valueBoolean": false }},
@@ -57,114 +57,19 @@
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Security",
               "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
+              "columns": [
+                { "column": { "name": "ModuleId", "value": "1" }},
                 { "column": { "name": "FormId", "value": "5" }},
                 { "column": { "name": "Active", "valueBoolean": true }},
                 { "column": { "name": "IsDeleted", "valueBoolean": false }},
                 { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
               ]
             }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
-                { "column": { "name": "FormId", "value": "6" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
-                { "column": { "name": "FormId", "value": "7" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "1" }},
-                { "column": { "name": "FormId", "value": "8" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [                { "column": { "name": "ModuleId", "value": "3" }},
-                { "column": { "name": "FormId", "value": "9" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [
-                { "column": { "name": "ModuleId", "value": "3" }},
-                { "column": { "name": "FormId", "value": "10" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [
-                { "column": { "name": "ModuleId", "value": "3" }},
-                { "column": { "name": "FormId", "value": "11" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Security",
-              "tableName": "FormModules",
-              "columns": [
-                { "column": { "name": "ModuleId", "value": "3" }},
-                { "column": { "name": "FormId", "value": "12" }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
-              ]
-            }
           }
-
         ]
       }
     }

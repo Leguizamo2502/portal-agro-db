@@ -15,6 +15,7 @@
                 { "column": { "name": "Password", "value": "3c910034a6b8d034b35ec4d48bd4fe9f7f0447197c5c11a9fd59b805a7a3c5b1" } },
                 { "column": { "name": "PersonId", "value": "1" } },
                 { "column": { "name": "IsEmailVerified", "valueBoolean": true } },
+                { "column": { "name": "IsTwoFactorEnabled", "valueBoolean": false } },
                 { "column": { "name": "IsDeleted", "valueBoolean": false } },
                 { "column": { "name": "Active", "valueBoolean": true } },
                 { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
@@ -30,6 +31,7 @@
                 { "column": { "name": "Password", "value": "2908b0e07c2c69d9950c23102b413a73a12d55662a3ad1cbf410e83da4ca2110" } },
                 { "column": { "name": "PersonId", "value": "2" } },
                 { "column": { "name": "IsEmailVerified", "valueBoolean": true } },
+                { "column": { "name": "IsTwoFactorEnabled", "valueBoolean": false } },
                 { "column": { "name": "IsDeleted", "valueBoolean": false } },
                 { "column": { "name": "Active", "valueBoolean": true } },
                 { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
@@ -45,6 +47,7 @@
                 { "column": { "name": "Password", "value": "2efc67729defb6bdb11da68be4ea3f3d006ca976a29c1f2709fba0225bb7bf03" } },
                 { "column": { "name": "PersonId", "value": "3" } },
                 { "column": { "name": "IsEmailVerified", "valueBoolean": true } },
+                { "column": { "name": "IsTwoFactorEnabled", "valueBoolean": false } },
                 { "column": { "name": "IsDeleted", "valueBoolean": false } },
                 { "column": { "name": "Active", "valueBoolean": true } },
                 { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
@@ -60,6 +63,7 @@
                 { "column": { "name": "Password", "value": "6f197e4b1640b6ca22bb2e2c0af26b2f4ad23eb42552d5b853b8c8f9f3f34a10" } },
                 { "column": { "name": "PersonId", "value": "4" } },
                 { "column": { "name": "IsEmailVerified", "valueBoolean": true } },
+                { "column": { "name": "IsTwoFactorEnabled", "valueBoolean": false } },
                 { "column": { "name": "IsDeleted", "valueBoolean": false } },
                 { "column": { "name": "Active", "valueBoolean": true } },
                 { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
@@ -75,6 +79,7 @@
                 { "column": { "name": "Password", "value": "6f197e4b1640b6ca22bb2e2c0af26b2f4ad23eb42552d5b853b8c8f9f3f34a10" } },
                 { "column": { "name": "PersonId", "value": "5" } },
                 { "column": { "name": "IsEmailVerified", "valueBoolean": true } },
+                { "column": { "name": "IsTwoFactorEnabled", "valueBoolean": false } },
                 { "column": { "name": "IsDeleted", "valueBoolean": false } },
                 { "column": { "name": "Active", "valueBoolean": true } },
                 { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }

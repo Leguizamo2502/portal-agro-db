@@ -6,472 +6,66 @@
         "author": "portal-agro-team",
         "context": "develop,qa,staging,main",
         "changes": [
-
           {
             "insert": {
               "schemaName": "Producers",
               "tableName": "Products",
               "columns": [
-                { "column": { "name": "Name", "value": "Cafe el sabor" }},
-                { "column": { "name": "Description", "value": "Cafe con el mejor sabor del campo" }},
-                { "column": { "name": "Price", "value": "30000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "300 lb cada tres meses" }},
-                { "column": { "name": "Stock", "value": "250" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
+                { "column": { "name": "Name", "value": "Cafe El Sabor" } },
+                { "column": { "name": "Description", "value": "Cafe con el mejor sabor del campo" } },
+                { "column": { "name": "Price", "value": "30000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "300 lb cada tres meses" } },
+                { "column": { "name": "Stock", "value": "250" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Producers",
               "tableName": "Products",
               "columns": [
-                { "column": { "name": "Name", "value": "Café Orgánico Premium" }},
-                { "column": { "name": "Description", "value": "Cultivado sin químicos, sabor intenso" }},
-                { "column": { "name": "Price", "value": "35000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "200 lb por trimestre" }},
-                { "column": { "name": "Stock", "value": "180" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
+                { "column": { "name": "Name", "value": "Cafe Organico Premium" } },
+                { "column": { "name": "Description", "value": "Cultivado sin quimicos, sabor intenso" } },
+                { "column": { "name": "Price", "value": "35000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "200 lb por trimestre" } },
+                { "column": { "name": "Stock", "value": "180" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
               ]
             }
           },
-
           {
             "insert": {
               "schemaName": "Producers",
               "tableName": "Products",
               "columns": [
-                { "column": { "name": "Name", "value": "Café Tostado Suave" }},
-                { "column": { "name": "Description", "value": "Tueste medio con notas frutales" }},
-                { "column": { "name": "Price", "value": "32000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "150 lb cada mes" }},
-                { "column": { "name": "Stock", "value": "120" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Grano Oscuro" }},
-                { "column": { "name": { "value": "Grano seleccionado de alta montaña" }, "value": "Grano seleccionado de alta montaña" }},
-                { "column": { "name": "Description", "value": "Grano seleccionado de alta montaña" }},
-                { "column": { "name": "Price", "value": "34000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "180 lb bimestral" }},
-                { "column": { "name": "Stock", "value": "210" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café El Mirador" }},
-                { "column": { "name": "Description", "value": "Cosechado a mano en clima fresco" }},
-                { "column": { "name": "Price", "value": "30000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "220 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "190" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Clásico de los Andes" }},
-                { "column": { "name": "Description", "value": "Sabor balanceado, aroma suave" }},
-                { "column": { "name": "Price", "value": "31000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "250 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "170" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Supremo" }},
-                { "column": { "name": "Description", "value": "Mezcla selecta de granos" }},
-                { "column": { "name": "Price", "value": "36000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "300 lb cada 2 meses" }},
-                { "column": { "name": "Stock", "value": "260" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café los Alpes" }},
-                { "column": { "name": "Description", "value": "Cultivo en altitudes extremas" }},
-                { "column": { "name": "Price", "value": "37000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "280 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "250" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Lulo Blend" }},
-                { "column": { "name": "Description", "value": "Mezcla con notas cítricas" }},
-                { "column": { "name": "Price", "value": "33000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "230 lb bimestral" }},
-                { "column": { "name": "Stock", "value": "200" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café del Bosque" }},
-                { "column": { "name": "Description", "value": "Tueste natural, suave al paladar" }},
-                { "column": { "name": "Price", "value": "30000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "180 lb mensual" }},
-                { "column": { "name": "Stock", "value": "160" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Reserva Especial" }},
-                { "column": { "name": "Description", "value": "Grano seleccionado manualmente" }},
-                { "column": { "name": "Price", "value": "38000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "150 lb cada tres meses" }},
-                { "column": { "name": "Stock", "value": "130" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Sierra Verde" }},
-                { "column": { "name": "Description", "value": "Cultivo bajo sombra natural" }},
-                { "column": { "name": "Price", "value": "31000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "200 lb cada 2 meses" }},
-                { "column": { "name": "Stock", "value": "140" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café del Amanecer" }},
-                { "column": { "name": "Description", "value": "Grano joven de excelente aroma" }},
-                { "column": { "name": "Price", "value": "30500" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "160 lb mensual" }},
-                { "column": { "name": "Stock", "value": "150" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Tostado Artesanal" }},
-                { "column": { "name": "Description", "value": "Tueste lento en horno de barro" }},
-                { "column": { "name": "Price", "value": "34000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "190 lb bimestral" }},
-                { "column": { "name": "Stock", "value": "175" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café con Cacao" }},
-                { "column": { "name": { "value": "Mezcla suave con aroma a chocolate" }, "value": "Mezcla suave con aroma a chocolate" }},
-                { "column": { "name": "Description", "value": "Mezcla suave con aroma a chocolate" }},
-                { "column": { "name": "Price", "value": "33000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "210 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "160" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "9" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Gourmet del Campo" }},
-                { "column": { "name": "Description", "value": "Sabor intenso con notas amaderadas" }},
-                { "column": { "name": "Price", "value": "37000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "280 lb bimestral" }},
-                { "column": { "name": "Stock", "value": "210" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Lavado" }},
-                { "column": { "name": "Description", "value": "Proceso húmedo tradicional" }},
-                { "column": { "name": "Price", "value": "32000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "190 lb mensual" }},
-                { "column": { "name": "Stock", "value": "160" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Natural" }},
-                { "column": { "name": "Description", "value": "Secado al sol directamente" }},
-                { "column": { "name": "Price", "value": "31000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "220 lb cada 3 meses" }},
-                { "column": { "name": "Stock", "value": "180" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café de Altura" }},
-                { "column": { "name": "Description", "value": "Granos cultivados a 1600msnm" }},
-                { "column": { "name": "Price", "value": "35000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "270 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "200" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Lulo Espresso" }},
-                { "column": { "name": "Description", "value": "Versión fuerte ideal para espresso" }},
-                { "column": { "name": "Price", "value": "35500" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "160 lb mensual" }},
-                { "column": { "name": "Stock", "value": "190" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café Cacao Fusion" }},
-                { "column": { "name": "Description", "value": "Mezcla gourmet café y cacao" }},
-                { "column": { "name": "Price", "value": "39000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "240 lb trimestral" }},
-                { "column": { "name": "Stock", "value": "150" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "9" }},
-                { "column": { "name": "ProducerId", "value": "1" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
-              ]
-            }
-          },
-
-          {
-            "insert": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columns": [
-                { "column": { "name": "Name", "value": "Café de PRUEBA" }},
-                { "column": { "name": "Description", "value": "Selección premium para exportación" }},
-                { "column": { "name": "Price", "value": "40000" }},
-                { "column": { "name": "Unit", "value": "lb" }},
-                { "column": { "name": "Production", "value": "300 lb cada 2 meses" }},
-                { "column": { "name": "Stock", "value": "220" }},
-                { "column": { "name": "Status", "valueBoolean": true }},
-                { "column": { "name": "CategoryId", "value": "8" }},
-                { "column": { "name": "ProducerId", "value": "3" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }}
+                { "column": { "name": "Name", "value": "Cafe Grano Oscuro" } },
+                { "column": { "name": "Description", "value": "Grano seleccionado de alta montana" } },
+                { "column": { "name": "Price", "value": "34000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "180 lb bimestral" } },
+                { "column": { "name": "Stock", "value": "210" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
               ]
             }
           }
-
-
         ]
       }
     }

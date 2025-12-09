@@ -6,271 +6,45 @@
         "author": "portal-agro-team",
         "context": "develop,qa,staging,main",
         "changes": [
-
-          { "insert": {
+          {
+            "insert": {
               "schemaName": "Producers",
               "tableName": "ProductFarms",
               "columns": [
-                { "column": { "name": "ProductId", "value": "1" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
+                { "column": { "name": "ProductId", "value": "1" } },
+                { "column": { "name": "FarmId", "value": "1" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
               ]
-          }},
-
-          { "insert": {
+            }
+          },
+          {
+            "insert": {
               "schemaName": "Producers",
               "tableName": "ProductFarms",
               "columns": [
-                { "column": { "name": "ProductId", "value": "2" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
+                { "column": { "name": "ProductId", "value": "2" } },
+                { "column": { "name": "FarmId", "value": "2" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
               ]
-          }},
-
-          { "insert": {
+            }
+          },
+          {
+            "insert": {
               "schemaName": "Producers",
               "tableName": "ProductFarms",
               "columns": [
-                { "column": { "name": "ProductId", "value": "3" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
+                { "column": { "name": "ProductId", "value": "3" } },
+                { "column": { "name": "FarmId", "value": "3" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
               ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "4" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "5" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "6" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "7" }},
-                { "column": { "name": "FarmId", "value": "3" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "8" }},
-                { "column": { "name": "FarmId", "value": "3" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "9" }},
-                { "column": { "name": "FarmId", "value": "4" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "10" }},
-                { "column": { "name": "FarmId", "value": "4" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "11" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "12" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "13" }},
-                { "column": { "name": "FarmId", "value": "3" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "14" }},
-                { "column": { "name": "FarmId", "value": "4" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "15" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "16" }},
-                { "column": { "name": "FarmId", "value": "3" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "17" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "18" }},
-                { "column": { "name": "FarmId", "value": "4" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "19" }},
-                { "column": { "name": "FarmId", "value": "2" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "20" }},
-                { "column": { "name": "FarmId", "value": "4" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "21" }},
-                { "column": { "name": "FarmId", "value": "3" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }},
-
-          { "insert": {
-              "schemaName": "Producers",
-              "tableName": "ProductFarms",
-              "columns": [
-                { "column": { "name": "ProductId", "value": "22" }},
-                { "column": { "name": "FarmId", "value": "1" }},
-                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00Z" }},
-                { "column": { "name": "IsDeleted", "valueBoolean": false }},
-                { "column": { "name": "Active", "valueBoolean": true }}
-              ]
-          }}
-
+            }
+          }
         ]
       }
     }
