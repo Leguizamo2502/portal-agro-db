@@ -2,14 +2,14 @@
   "databaseChangeLog": [
     {
       "changeSet": {
-        "id": "00040-products-categories",
+        "id": "00041-products-products",
         "author": "portal-agro-team",
         "context": "develop,qa,staging,main",
         "changes": [
           {
             "createTable": {
               "schemaName": "Producers",
-              "tableName": "Categories",
+              "tableName": "Products",
               "columns": [
                 {
                   "column": {
@@ -62,8 +62,85 @@
                 },
                 {
                   "column": {
-                    "name": "ParentCategoryId",
-                    "type": "INT"
+                    "name": "Description",
+                    "type": "NVARCHAR(1000)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Price",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Unit",
+                    "type": "NVARCHAR(50)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Production",
+                    "type": "NVARCHAR(150)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Stock",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Status",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ShippingIncluded",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CategoryId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProducerId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
                   }
                 }
               ]
@@ -71,12 +148,24 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Categories_Categories_ParentCategoryId",
+              "constraintName": "FK_Products_Category_CategoryId",
               "baseTableSchemaName": "Producers",
-              "baseTableName": "Categories",
-              "baseColumnNames": "ParentCategoryId",
+              "baseTableName": "Products",
+              "baseColumnNames": "CategoryId",
               "referencedTableSchemaName": "Producers",
-              "referencedTableName": "Categories",
+              "referencedTableName": "Category",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Products_Producers_ProducerId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "Products",
+              "baseColumnNames": "ProducerId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Producers",
               "referencedColumnNames": "Id",
               "onDelete": "RESTRICT"
             }
@@ -84,20 +173,20 @@
           {
             "addUniqueConstraint": {
               "schemaName": "Producers",
-              "tableName": "Categories",
-              "columnNames": "Name",
-              "constraintName": "UK_Categories_Name"
+              "tableName": "Products",
+              "columnNames": "ProducerId,Name",
+              "constraintName": "UK_Products_Producer_Name"
             }
           },
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Categories",
-              "indexName": "IX_Categories_ParentCategoryId",
+              "tableName": "Products",
+              "indexName": "IX_Products_CategoryId",
               "unique": false,
               "columns": [
                 {
-                  "column": { "name": "ParentCategoryId" }
+                  "column": { "name": "CategoryId" }
                 }
               ]
             }
@@ -105,8 +194,21 @@
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Categories",
-              "indexName": "IX_Categories_CreateAt_Id",
+              "tableName": "Products",
+              "indexName": "IX_Products_ProducerId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "ProducerId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Products",
+              "indexName": "IX_Products_CreateAt_Id",
               "unique": false,
               "columns": [
                 {

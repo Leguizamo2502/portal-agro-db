@@ -87,6 +87,14 @@
                       "nullable": false
                     }
                   }
+                },
+                {
+                  "column": {
+                    "name": "IsTwoFactorEnabled",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
                 }
               ]
             }

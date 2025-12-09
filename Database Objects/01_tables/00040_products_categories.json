@@ -9,7 +9,7 @@
           {
             "createTable": {
               "schemaName": "Producers",
-              "tableName": "Categories",
+              "tableName": "Category",
               "columns": [
                 {
                   "column": {
@@ -71,12 +71,12 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Categories_Categories_ParentCategoryId",
+              "constraintName": "FK_Category_Category_ParentCategoryId",
               "baseTableSchemaName": "Producers",
-              "baseTableName": "Categories",
+              "baseTableName": "Category",
               "baseColumnNames": "ParentCategoryId",
               "referencedTableSchemaName": "Producers",
-              "referencedTableName": "Categories",
+              "referencedTableName": "Category",
               "referencedColumnNames": "Id",
               "onDelete": "RESTRICT"
             }
@@ -84,16 +84,16 @@
           {
             "addUniqueConstraint": {
               "schemaName": "Producers",
-              "tableName": "Categories",
+              "tableName": "Category",
               "columnNames": "Name",
-              "constraintName": "UK_Categories_Name"
+              "constraintName": "UK_Category_Name"
             }
           },
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Categories",
-              "indexName": "IX_Categories_ParentCategoryId",
+              "tableName": "Category",
+              "indexName": "IX_Category_ParentCategoryId",
               "unique": false,
               "columns": [
                 {
@@ -105,8 +105,8 @@
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Categories",
-              "indexName": "IX_Categories_CreateAt_Id",
+              "tableName": "Category",
+              "indexName": "IX_Category_CreateAt_Id",
               "unique": false,
               "columns": [
                 {
