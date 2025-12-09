@@ -1,0 +1,51 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01020-security-roles-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Rols",
+              "columns": [
+                { "column": { "name": "Name", "value": "Admin" }},
+                { "column": { "name": "Description", "value": "Rol con permisos administrativos" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Rols",
+              "columns": [
+                { "column": { "name": "Name", "value": "Consumer" }},
+                { "column": { "name": "Description", "value": "Rol con permisos de usuario" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Rols",
+              "columns": [
+                { "column": { "name": "Name", "value": "Producer" }},
+                { "column": { "name": "Description", "value": "Rol con permisos de Productor" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

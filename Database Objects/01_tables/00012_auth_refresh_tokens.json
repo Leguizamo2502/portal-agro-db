@@ -1,0 +1,126 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00012-auth-refresh-tokens",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Auth",
+              "tableName": "RefreshToken",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "TokenHash",
+                    "type": "NVARCHAR(64)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ExpiresAt",
+                    "type": "DATETIME2",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsRevoked",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ReplacedByTokenHash",
+                    "type": "NVARCHAR(64)"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RefreshToken_Users_UserId",
+              "baseTableSchemaName": "Auth",
+              "baseTableName": "RefreshToken",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_UserId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "UserId"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_TokenHash",
+              "unique": true,
+              "columns": [
+                {
+                  "column": {
+                    "name": "TokenHash"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01021-security-permissions-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "leer" }},
+                { "column": { "name": "Description", "value": "Puede ver" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "crear" }},
+                { "column": { "name": "Description", "value": "Puede crear" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "actualizar" }},
+                { "column": { "name": "Description", "value": "Puede editar" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "eliminar" }},
+                { "column": { "name": "Description", "value": "Puede eliminar" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

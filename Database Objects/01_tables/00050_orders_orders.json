@@ -1,0 +1,353 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00050-orders-orders",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": { "primaryKey": true, "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "Code",
+                    "type": "NVARCHAR(50)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProductId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "ProducerIdSnapshot",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProductNameSnapshot",
+                    "type": "NVARCHAR(200)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UnitPriceSnapshot",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "QuantityRequested",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Status",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "PaymentImageUrl",
+                    "type": "NVARCHAR(512)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PaymentUploadedAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "AcceptedAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PaymentSubmittedAt",
+                    "type": "DATETIME2"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "ProducerDecisionAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProducerDecisionReason",
+                    "type": "NVARCHAR(500)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProducerNotes",
+                    "type": "NVARCHAR(500)"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "RecipientName",
+                    "type": "NVARCHAR(100)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ContactPhone",
+                    "type": "NVARCHAR(30)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "AddressLine1",
+                    "type": "NVARCHAR(200)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "AddressLine2",
+                    "type": "NVARCHAR(200)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CityId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "AdditionalNotes",
+                    "type": "NVARCHAR(500)"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "Subtotal",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Total",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "UserConfirmEnabledAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserReceivedAnswer",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserReceivedAt",
+                    "type": "DATETIME2"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "AutoCloseAt",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RowVersion",
+                    "type": "ROWVERSION",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Orders_Users_UserId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "Orders",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Orders_Products_ProductId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "Orders",
+              "baseColumnNames": "ProductId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Products",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Orders_City_CityId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "Orders",
+              "baseColumnNames": "CityId",
+              "referencedTableSchemaName": "Location",
+              "referencedTableName": "City",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "columnNames": "Code",
+              "constraintName": "UK_Orders_Code"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "indexName": "IX_Orders_UserId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "UserId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "indexName": "IX_Orders_ProductId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "ProductId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "indexName": "IX_Orders_CityId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CityId" } }
+              ]
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "indexName": "IX_Orders_Status_AutoCloseAt_Active_IsDeleted",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "Status" } },
+                { "column": { "name": "AutoCloseAt" } },
+                { "column": { "name": "Active" } },
+                { "column": { "name": "IsDeleted" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "Orders",
+              "indexName": "IX_Orders_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreateAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

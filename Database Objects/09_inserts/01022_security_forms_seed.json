@@ -1,0 +1,87 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01022-security-forms-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Formularios" }},
+                { "column": { "name": "Description", "value": "Gestión de formularios" }},
+                { "column": { "name": "Url", "value": "/account/security/form" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Usuarios" }},
+                { "column": { "name": "Description", "value": "Gestión de usuarios" }},
+                { "column": { "name": "Url", "value": "/account/security/user" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Roles" }},
+                { "column": { "name": "Description", "value": "Gestión de roles" }},
+                { "column": { "name": "Url", "value": "/account/security/rol" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Módulos" }},
+                { "column": { "name": "Description", "value": "Gestión de módulos" }},
+                { "column": { "name": "Url", "value": "/account/security/module" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Rol-Usuario" }},
+                { "column": { "name": "Description", "value": "Asignación rol-usuario" }},
+                { "column": { "name": "Url", "value": "/account/security/rolUser" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01030-producers-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columns": [
+                { "column": { "name": "Code", "value": "M3QPD6Y8ZR" } },
+                { "column": { "name": "Description", "value": "Hola vendo papa" } },
+                { "column": { "name": "UserId", "value": "3" } },
+                { "column": { "name": "QrUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1756782308/qr_png_e6xgom.png" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columns": [
+                { "column": { "name": "Code", "value": "AB7KX92TQF" } },
+                { "column": { "name": "Description", "value": "Hola vendo papa modo admin" } },
+                { "column": { "name": "UserId", "value": "1" } },
+                { "column": { "name": "QrUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1756782308/qr_png_e6xgom.png" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Producers",
+              "columns": [ 
+                { "column": { "name": "Code", "value": "AB7KX92TSZ" } },
+                { "column": { "name": "Description", "value": "Prueba de integracion" } },
+                { "column": { "name": "UserId", "value": "5" } },
+                { "column": { "name": "QrUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1756782308/qr_png_e6xgom.png" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
