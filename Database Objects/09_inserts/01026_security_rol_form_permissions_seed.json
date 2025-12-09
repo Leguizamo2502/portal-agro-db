@@ -1,0 +1,438 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01026-security-rol-form-permissions-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "4" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "4" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "4" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "4" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "4" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "FormId", "value": "1" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "FormId", "value": "2" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "FormId", "value": "3" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "FormId", "value": "4" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "FormId", "value": "5" }},
+                { "column": { "name": "PermissionId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

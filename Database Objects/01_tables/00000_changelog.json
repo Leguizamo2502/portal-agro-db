@@ -1,0 +1,41 @@
+{
+  "databaseChangeLog": [
+    
+    { "include": { "file": "00001_location_departments.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00002_location_cities.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00010_auth_persons.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00011_auth_users.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00012_auth_refresh_tokens.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00013_auth_password_reset_codes.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00014_auth_email_verification_codes.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00015_auth_two_factor_codes.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00020_security_roles.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00021_security_permissions.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00022_security_forms.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00023_security_modules.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00024_security_form_modules.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00025_security_rol_users.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00026_security_rol_form_permissions.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00030_producers_producers.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00031_producers_producer_social_links.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00032_producers_farms.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00033_producers_farm_images.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00040_products_categories.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00041_products_products.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00042_products_product_images.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00043_products_product_farms.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00044_products_favorites.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00045_products_reviews.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00050_orders_orders.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00051_orders_consumer_ratings.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00052_orders_order_chat_conversations.json", "relativeToChangeLogFile": true } },
+    { "include": { "file": "00053_orders_order_chat_messages.json", "relativeToChangeLogFile": true } },
+
+    { "include": { "file": "00060_notifications_notifications.json", "relativeToChangeLogFile": true } }
+  ]
+}

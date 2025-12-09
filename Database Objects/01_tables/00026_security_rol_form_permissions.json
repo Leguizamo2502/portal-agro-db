@@ -1,0 +1,171 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00026-security-rol-form-permissions",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RolId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FormId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PermissionId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RolFormPermissions_Rols_RolId",
+              "baseTableSchemaName": "Security",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "RolId",
+              "referencedTableSchemaName": "Security",
+              "referencedTableName": "Rols",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RolFormPermissions_Forms_FormId",
+              "baseTableSchemaName": "Security",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "FormId",
+              "referencedTableSchemaName": "Security",
+              "referencedTableName": "Forms",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_RolFormPermissions_Permissions_PermissionId",
+              "baseTableSchemaName": "Security",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "PermissionId",
+              "referencedTableSchemaName": "Security",
+              "referencedTableName": "Permissions",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "columnNames": "RolId,FormId,PermissionId",
+              "constraintName": "UK_RolFormPermissions_Rol_Form_Permission"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "indexName": "IX_RolFormPermissions_RolId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "RolId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "indexName": "IX_RolFormPermissions_FormId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "FormId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Security",
+              "tableName": "RolFormPermissions",
+              "indexName": "IX_RolFormPermissions_PermissionId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "PermissionId" }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

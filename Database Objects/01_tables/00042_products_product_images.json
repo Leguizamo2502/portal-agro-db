@@ -1,0 +1,138 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00042-products-product-images",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ImageUrl",
+                    "type": "NVARCHAR(500)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FileName",
+                    "type": "NVARCHAR(200)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PublicId",
+                    "type": "NVARCHAR(200)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProductId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ProductImages_Products_ProductId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "ProductImages",
+              "baseColumnNames": "ProductId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Products",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "indexName": "IX_ProductImages_ProductId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "ProductId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "indexName": "IX_ProductImages_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "CreateAt", "descending": true }
+                },
+                {
+                  "column": { "name": "Id", "descending": true }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

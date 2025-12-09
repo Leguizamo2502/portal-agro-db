@@ -1,0 +1,108 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00015-auth-two-factor-codes",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Auth",
+              "tableName": "TwoFactorCodes",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Code",
+                    "type": "NVARCHAR(20)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Expiration",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsUsed",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_TwoFactorCodes_Users_UserId",
+              "baseTableSchemaName": "Auth",
+              "baseTableName": "TwoFactorCodes",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "TwoFactorCodes",
+              "indexName": "IX_TwoFactorCodes_UserId_CreateAt",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "UserId" } },
+                { "column": { "name": "CreateAt", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

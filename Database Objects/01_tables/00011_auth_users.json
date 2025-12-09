@@ -1,0 +1,156 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00011-auth-users",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Auth",
+              "tableName": "Users",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Email",
+                    "type": "NVARCHAR(150)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Password",
+                    "type": "NVARCHAR(255)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PersonId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsEmailVerified",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsTwoFactorEnabled",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Users_Persons_PersonId",
+              "baseTableSchemaName": "Auth",
+              "baseTableName": "Users",
+              "baseColumnNames": "PersonId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Persons",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Auth",
+              "tableName": "Users",
+              "columnNames": "Email",
+              "constraintName": "UK_Users_Email"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Auth",
+              "tableName": "Users",
+              "columnNames": "PersonId",
+              "constraintName": "UK_Users_PersonId"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Auth",
+              "tableName": "Users",
+              "indexName": "IX_Users_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

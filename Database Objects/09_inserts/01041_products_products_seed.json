@@ -1,0 +1,73 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01041-products-products-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Products",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cafe El Sabor" } },
+                { "column": { "name": "Description", "value": "Cafe con el mejor sabor del campo" } },
+                { "column": { "name": "Price", "value": "30000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "300 lb cada tres meses" } },
+                { "column": { "name": "Stock", "value": "250" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Products",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cafe Organico Premium" } },
+                { "column": { "name": "Description", "value": "Cultivado sin quimicos, sabor intenso" } },
+                { "column": { "name": "Price", "value": "35000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "200 lb por trimestre" } },
+                { "column": { "name": "Stock", "value": "180" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "Products",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cafe Grano Oscuro" } },
+                { "column": { "name": "Description", "value": "Grano seleccionado de alta montana" } },
+                { "column": { "name": "Price", "value": "34000" } },
+                { "column": { "name": "Unit", "value": "lb" } },
+                { "column": { "name": "Production", "value": "180 lb bimestral" } },
+                { "column": { "name": "Stock", "value": "210" } },
+                { "column": { "name": "Status", "valueBoolean": true } },
+                { "column": { "name": "CategoryId", "value": "15" } },
+                { "column": { "name": "ProducerId", "value": "1" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
