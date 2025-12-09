@@ -2,19 +2,6 @@
   "databaseChangeLog": [
     {
       "include": {
-        "file": "01000_auth_persons_seed.json",
-        "relativeToChangelogFile": true
-      }
-    },
-    {
-      "include": {
-        "file": "01001_auth_users_seed.json",
-        "relativeToChangelogFile": true
-      }
-    },
-
-    {
-      "include": {
         "file": "01010_location_departments_seed.json",
         "relativeToChangelogFile": true
       }
@@ -22,6 +9,19 @@
     {
       "include": {
         "file": "01011_location_cities_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+
+    {
+      "include": {
+        "file": "01000_auth_persons_seed.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "01001_auth_users_seed.json",
         "relativeToChangelogFile": true
       }
     },

@@ -2,14 +2,14 @@
   "databaseChangeLog": [
     {
       "changeSet": {
-        "id": "00041-products-products",
+        "id": "00042-products-product-images",
         "author": "portal-agro-team",
         "context": "develop,qa,staging,main",
         "changes": [
           {
             "createTable": {
               "schemaName": "Producers",
-              "tableName": "Products",
+              "tableName": "ProductImages",
               "columns": [
                 {
                   "column": {
@@ -51,11 +51,10 @@
                     }
                   }
                 },
-
                 {
                   "column": {
-                    "name": "Name",
-                    "type": "NVARCHAR(150)",
+                    "name": "ImageUrl",
+                    "type": "NVARCHAR(500)",
                     "constraints": {
                       "nullable": false
                     }
@@ -63,8 +62,8 @@
                 },
                 {
                   "column": {
-                    "name": "Description",
-                    "type": "NVARCHAR(1000)",
+                    "name": "FileName",
+                    "type": "NVARCHAR(200)",
                     "constraints": {
                       "nullable": false
                     }
@@ -72,8 +71,8 @@
                 },
                 {
                   "column": {
-                    "name": "Price",
-                    "type": "DECIMAL(18,2)",
+                    "name": "PublicId",
+                    "type": "NVARCHAR(200)",
                     "constraints": {
                       "nullable": false
                     }
@@ -81,64 +80,7 @@
                 },
                 {
                   "column": {
-                    "name": "Unit",
-                    "type": "NVARCHAR(50)",
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-                {
-                  "column": {
-                    "name": "Production",
-                    "type": "NVARCHAR(150)",
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-                {
-                  "column": {
-                    "name": "Stock",
-                    "type": "INT",
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-                {
-                  "column": {
-                    "name": "Status",
-                    "type": "BIT",
-                    "defaultValueBoolean": false,
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-                {
-                  "column": {
-                    "name": "ShippingIncluded",
-                    "type": "BIT",
-                    "defaultValueBoolean": false,
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-
-                {
-                  "column": {
-                    "name": "CategoryId",
-                    "type": "INT",
-                    "constraints": {
-                      "nullable": false
-                    }
-                  }
-                },
-                {
-                  "column": {
-                    "name": "ProducerId",
+                    "name": "ProductId",
                     "type": "INT",
                     "constraints": {
                       "nullable": false
@@ -150,45 +92,25 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Products_Categories_CategoryId",
+              "constraintName": "FK_ProductImages_Products_ProductId",
               "baseTableSchemaName": "Producers",
-              "baseTableName": "Products",
-              "baseColumnNames": "CategoryId",
+              "baseTableName": "ProductImages",
+              "baseColumnNames": "ProductId",
               "referencedTableSchemaName": "Producers",
-              "referencedTableName": "Categories",
+              "referencedTableName": "Products",
               "referencedColumnNames": "Id",
-              "onDelete": "RESTRICT"
-            }
-          },
-          {
-            "addForeignKeyConstraint": {
-              "constraintName": "FK_Products_Producers_ProducerId",
-              "baseTableSchemaName": "Producers",
-              "baseTableName": "Products",
-              "baseColumnNames": "ProducerId",
-              "referencedTableSchemaName": "Producers",
-              "referencedTableName": "Producers",
-              "referencedColumnNames": "Id",
-              "onDelete": "RESTRICT"
-            }
-          },
-          {
-            "addUniqueConstraint": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "columnNames": "ProducerId,Name",
-              "constraintName": "UK_Products_Producer_Name"
+              "onDelete": "CASCADE"
             }
           },
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Products",
-              "indexName": "IX_Products_CategoryId",
+              "tableName": "ProductImages",
+              "indexName": "IX_ProductImages_ProductId",
               "unique": false,
               "columns": [
                 {
-                  "column": { "name": "CategoryId" }
+                  "column": { "name": "ProductId" }
                 }
               ]
             }
@@ -196,21 +118,8 @@
           {
             "createIndex": {
               "schemaName": "Producers",
-              "tableName": "Products",
-              "indexName": "IX_Products_ProducerId",
-              "unique": false,
-              "columns": [
-                {
-                  "column": { "name": "ProducerId" }
-                }
-              ]
-            }
-          },
-          {
-            "createIndex": {
-              "schemaName": "Producers",
-              "tableName": "Products",
-              "indexName": "IX_Products_CreateAt_Id",
+              "tableName": "ProductImages",
+              "indexName": "IX_ProductImages_CreateAt_Id",
               "unique": false,
               "columns": [
                 {

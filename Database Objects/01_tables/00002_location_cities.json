@@ -9,7 +9,7 @@
           {
             "createTable": {
               "schemaName": "Location",
-              "tableName": "Cities",
+              "tableName": "City",
               "columns": [
                 {
                   "column": {
@@ -75,9 +75,9 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_Cities_Departments_DepartmentId",
+              "constraintName": "FK_City_Departments_DepartmentId",
               "baseTableSchemaName": "Location",
-              "baseTableName": "Cities",
+              "baseTableName": "City",
               "baseColumnNames": "DepartmentId",
               "referencedTableSchemaName": "Location",
               "referencedTableName": "Departments",
@@ -88,8 +88,8 @@
           {
             "createIndex": {
               "schemaName": "Location",
-              "tableName": "Cities",
-              "indexName": "IX_Cities_DepartmentId",
+              "tableName": "City",
+              "indexName": "IX_City_DepartmentId",
               "columns": [
                 {
                   "column": {
@@ -102,8 +102,8 @@
           {
             "createIndex": {
               "schemaName": "Location",
-              "tableName": "Cities",
-              "indexName": "IX_Cities_Name",
+              "tableName": "City",
+              "indexName": "IX_City_Name",
               "columns": [
                 {
                   "column": {

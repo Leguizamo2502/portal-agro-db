@@ -9,7 +9,7 @@
           {
             "createTable": {
               "schemaName": "Auth",
-              "tableName": "RefreshTokens",
+              "tableName": "RefreshToken",
               "columns": [
                 {
                   "column": {
@@ -79,9 +79,9 @@
           },
           {
             "addForeignKeyConstraint": {
-              "constraintName": "FK_RefreshTokens_Users_UserId",
+              "constraintName": "FK_RefreshToken_Users_UserId",
               "baseTableSchemaName": "Auth",
-              "baseTableName": "RefreshTokens",
+              "baseTableName": "RefreshToken",
               "baseColumnNames": "UserId",
               "referencedTableSchemaName": "Auth",
               "referencedTableName": "Users",
@@ -92,8 +92,8 @@
           {
             "createIndex": {
               "schemaName": "Auth",
-              "tableName": "RefreshTokens",
-              "indexName": "IX_RefreshTokens_UserId",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_UserId",
               "unique": false,
               "columns": [
                 {
@@ -107,8 +107,8 @@
           {
             "createIndex": {
               "schemaName": "Auth",
-              "tableName": "RefreshTokens",
-              "indexName": "IX_RefreshTokens_TokenHash",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_TokenHash",
               "unique": true,
               "columns": [
                 {

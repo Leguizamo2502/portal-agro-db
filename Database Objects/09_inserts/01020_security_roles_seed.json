@@ -8,7 +8,7 @@
           {
             "insert": {
               "schemaName": "Security",
-              "tableName": "Roles",
+              "tableName": "Rols",
               "columns": [
                 { "column": { "name": "Name", "value": "Admin" }},
                 { "column": { "name": "Description", "value": "Rol con permisos administrativos" }},
@@ -21,7 +21,7 @@
           {
             "insert": {
               "schemaName": "Security",
-              "tableName": "Roles",
+              "tableName": "Rols",
               "columns": [
                 { "column": { "name": "Name", "value": "Consumer" }},
                 { "column": { "name": "Description", "value": "Rol con permisos de usuario" }},
@@ -34,7 +34,7 @@
           {
             "insert": {
               "schemaName": "Security",
-              "tableName": "Roles",
+              "tableName": "Rols",
               "columns": [
                 { "column": { "name": "Name", "value": "Producer" }},
                 { "column": { "name": "Description", "value": "Rol con permisos de Productor" }},
