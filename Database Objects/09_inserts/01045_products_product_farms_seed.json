@@ -1,0 +1,52 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01045-products-product-farms-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "columns": [
+                { "column": { "name": "ProductId", "value": "1" } },
+                { "column": { "name": "FarmId", "value": "1" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "columns": [
+                { "column": { "name": "ProductId", "value": "2" } },
+                { "column": { "name": "FarmId", "value": "2" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductFarms",
+              "columns": [
+                { "column": { "name": "ProductId", "value": "3" } },
+                { "column": { "name": "FarmId", "value": "3" } },
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01023-security-modules-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Seguridad" }},
+                { "column": { "name": "Description", "value": "Administración de seguridad" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Parámetros" }},
+                { "column": { "name": "Description", "value": "Parámetros del sistema" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Productor" }},
+                { "column": { "name": "Description", "value": "Gestión del productor" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

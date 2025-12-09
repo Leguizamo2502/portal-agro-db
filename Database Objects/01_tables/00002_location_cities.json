@@ -1,0 +1,120 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00002-create-location-cities",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Location",
+              "tableName": "City",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Name",
+                    "type": "VARCHAR(150)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "DepartmentId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "GETUTCDATE()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_City_Departments_DepartmentId",
+              "baseTableSchemaName": "Location",
+              "baseTableName": "City",
+              "baseColumnNames": "DepartmentId",
+              "referencedTableSchemaName": "Location",
+              "referencedTableName": "Departments",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Location",
+              "tableName": "City",
+              "indexName": "IX_City_DepartmentId",
+              "columns": [
+                {
+                  "column": {
+                    "name": "DepartmentId"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Location",
+              "tableName": "City",
+              "indexName": "IX_City_Name",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Name"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

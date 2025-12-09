@@ -1,0 +1,179 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00051-orders-consumer-ratings",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": { "primaryKey": true, "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "OrderId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProducerId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Rating",
+                    "type": "TINYINT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Comment",
+                    "type": "NVARCHAR(500)"
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ConsumerRatings_Orders_OrderId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "ConsumerRatings",
+              "baseColumnNames": "OrderId",
+              "referencedTableSchemaName": "Orders",
+              "referencedTableName": "Orders",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ConsumerRatings_Producers_ProducerId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "ConsumerRatings",
+              "baseColumnNames": "ProducerId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Producers",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_ConsumerRatings_Users_UserId",
+              "baseTableSchemaName": "Orders",
+              "baseTableName": "ConsumerRatings",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "columnNames": "OrderId",
+              "constraintName": "UK_ConsumerRatings_Order"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "indexName": "IX_ConsumerRatings_ProducerId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "ProducerId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "indexName": "IX_ConsumerRatings_UserId",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "UserId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "indexName": "IX_ConsumerRatings_OrderId",
+              "unique": true,
+              "columns": [
+                { "column": { "name": "OrderId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Orders",
+              "tableName": "ConsumerRatings",
+              "indexName": "IX_ConsumerRatings_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreateAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

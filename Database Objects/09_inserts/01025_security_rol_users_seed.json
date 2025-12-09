@@ -1,0 +1,137 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01025-security-rol-users-seed",
+        "author": "portal-agro-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "1" }},
+                { "column": { "name": "RolId", "value": "1" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "1" }},
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "1" }},
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "3" }},
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "3" }},
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "2" }},
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "4" }},
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "5" }},
+                { "column": { "name": "RolId", "value": "2" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Security",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "value": "5" }},
+                { "column": { "name": "RolId", "value": "3" }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "CreateAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

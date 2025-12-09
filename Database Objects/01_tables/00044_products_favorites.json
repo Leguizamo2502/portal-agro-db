@@ -1,0 +1,153 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00044-products-favorites",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "Favorites",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ProductId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Favorites_Users_UserId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "Favorites",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Favorites_Products_ProductId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "Favorites",
+              "baseColumnNames": "ProductId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Products",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "Favorites",
+              "columnNames": "UserId,ProductId",
+              "constraintName": "UK_Favorites_User_Product"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Favorites",
+              "indexName": "IX_Favorites_UserId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "UserId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Favorites",
+              "indexName": "IX_Favorites_ProductId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "ProductId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Favorites",
+              "indexName": "IX_Favorites_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "CreateAt", "descending": true }
+                },
+                {
+                  "column": { "name": "Id", "descending": true }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

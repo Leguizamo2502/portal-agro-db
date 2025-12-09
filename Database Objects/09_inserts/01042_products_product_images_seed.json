@@ -1,0 +1,364 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "01042-products-product-images-seed",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Producers",
+              "tableName": "ProductImages",
+              "columns": [
+                { "column": { "name": "ImageUrl", "value": "https://res.cloudinary.com/djj163sc9/image/upload/v1754488119/REVERDERI-200-G_dj1poi.png" }},
+                { "column": { "name": "FileName", "value": "Imagen_Default.jpg" }},
+                { "column": { "name": "PublicId", "value": "default" }},
+                { "column": { "name": "ProductId", "value": "1" }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreateAt", "valueDate": "2024-01-01T00:00:00" }}
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

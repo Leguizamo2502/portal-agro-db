@@ -1,0 +1,179 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00060-notifications-notifications",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Notifications",
+              "tableName": "Notifications",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "Title",
+                    "type": "NVARCHAR(MAX)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Message",
+                    "type": "NVARCHAR(MAX)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "IsRead",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ReadAtUtc",
+                    "type": "DATETIME2"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "RelatedType",
+                    "type": "NVARCHAR(MAX)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RelatedRoute",
+                    "type": "NVARCHAR(MAX)"
+                  }
+                },
+
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Notifications_Users_UserId",
+              "baseTableSchemaName": "Notifications",
+              "baseTableName": "Notifications",
+              "baseColumnNames": "UserId",
+              "referencedTableSchemaName": "Auth",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "Notifications",
+              "tableName": "Notifications",
+              "indexName": "IX_Notifications_UserId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "UserId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Notifications",
+              "tableName": "Notifications",
+              "indexName": "IX_Notifications_UserId_IsRead",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "UserId" }
+                },
+                {
+                  "column": { "name": "IsRead" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Notifications",
+              "tableName": "Notifications",
+              "indexName": "IX_Notifications_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "CreateAt", "descending": true }
+                },
+                {
+                  "column": { "name": "Id", "descending": true }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

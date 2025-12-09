@@ -1,0 +1,125 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00040-products-categories",
+        "author": "portal-agro-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Producers",
+              "tableName": "Category",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreateAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Name",
+                    "type": "NVARCHAR(150)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ParentCategoryId",
+                    "type": "INT"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "constraintName": "FK_Category_Category_ParentCategoryId",
+              "baseTableSchemaName": "Producers",
+              "baseTableName": "Category",
+              "baseColumnNames": "ParentCategoryId",
+              "referencedTableSchemaName": "Producers",
+              "referencedTableName": "Category",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Producers",
+              "tableName": "Category",
+              "columnNames": "Name",
+              "constraintName": "UK_Category_Name"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Category",
+              "indexName": "IX_Category_ParentCategoryId",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "ParentCategoryId" }
+                }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Producers",
+              "tableName": "Category",
+              "indexName": "IX_Category_CreateAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": { "name": "CreateAt", "descending": true }
+                },
+                {
+                  "column": { "name": "Id", "descending": true }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
